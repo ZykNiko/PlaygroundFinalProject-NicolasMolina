@@ -1,0 +1,441 @@
+body{
+	background: #2F4F4F;
+	font-size: 62.5%;
+	font-family: 'Varela Round', Helvetica, Arial, serif;
+}
+
+
+h5{
+	font-size: 1rem;
+	margin-bottom: 0;
+
+}
+
+p{
+	font-size: 1rem;
+}
+
+
+
+img{
+	object-fit: cover;
+}
+
+/* Nav bar */
+.main-head{
+	background: white;
+	color: black;
+}
+
+nav.main{
+	min-height: 7vh;
+	display: flex;
+	width: 65%;
+	margin: auto; 
+	align-items: center;
+	padding: 0.5rem;
+}
+
+nav.main ul{
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+#logo{
+	flex: 2 1 40rem;
+}
+
+/* -----*/
+
+a{
+	font-size: .93rem;
+	text-decoration: none;
+	color: black;
+}
+
+
+.main{
+	background: white;
+	width: 60%;
+	margin: 5% auto;
+	border-radius: 4px;
+	padding-bottom: 20px;
+}
+
+/* NAVIGATION BAR */
+.second-nav{
+	display: flex;
+	padding: 15px 30px;
+}
+
+.second-nav .feed{
+	flex: 1 1 30px;
+}
+
+.second-nav .feed:hover{
+	flex: 1 1 30px;
+	color: grey;
+}
+
+.second-nav .profile{
+	flex: 1 1 30px;
+}
+
+.second-nav .profile:hover{
+	flex: 1 1 30px;
+	color: grey;
+}
+
+.second-nav .new{
+	
+	text-align: right;
+	text-transform: uppercase;
+  	
+}
+
+.second-nav .new:hover{
+	color: grey;
+}
+
+/* Article */
+
+article{
+	width: 93%;
+	margin: auto;
+	padding: 40px 0;
+	border-bottom: 2px solid #ECEEEF;
+}
+
+.username{
+	margin-bottom: .2rem;
+}
+
+.username a{
+	font-size: 1.1rem;
+}
+
+.container-article{
+  display: flex;
+}
+
+.container-article img{
+  height: 68px;
+  width: 68px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+article:last-child {
+  border-bottom: 0;
+}
+
+time {
+  font-size: .8rem;
+  opacity: .7;
+}
+
+.post{
+	font-size: .94rem;
+}
+
+/* PROFILE */
+.profile{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.profile img{
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.profile h2{
+	margin-top: -10px;
+	font-size: 1.3rem;
+}
+
+/* Followers / Following / Post */
+.follow{
+	display: flex;
+	width: 95%;
+	justify-content: space-around;
+	margin: 30px auto;
+	text-align: center;
+	border-bottom: 2px solid #ECEEEF;
+	padding-bottom: 20px;
+}
+
+
+/*Form Elements*/
+form {
+    margin: 0;
+    padding: 40px;
+    font-size: 1rem;
+}
+input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #D3D8DC;
+  outline: 0;
+  background: #fff;
+  padding: 20px 0 4px;
+  margin: 0 0 20px;
+  color: #777B7E;
+}
+input:focus {
+  border-color: #7A9D96;
+  color: #2C3238;
+}
+textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #D3D8DC;
+  outline: 0;
+  background: #fff;
+  padding: 20px 0 4px;
+  margin: 0 0 20px;
+  color: #777B7E;
+}
+textarea:focus {
+  border-color: #7A9D96;
+  color: #2C3238;
+}
+button#submit {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #7A9D96;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  opacity: .8;
+  transition: .35s linear;
+}
+
+button#submit:hover {
+  opacity: 1;
+}
+
+/*Notifications*/
+.notification {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.success {
+  background: #43DC7E;
+  color: white;
+}
+.error {
+  background: #AB3444;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+/*Footer*/
+footer{
+  color: white;
+  text-align: center;
+  font-size: .875em;
+  margin: 40px 0;
+}
+
+footer p {
+  opacity: .8;
+}
+
+footer p a {
+  color: white;
+}
+
+img.profile{
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+
+
+/*Media Queries*/
+@media (max-width: 786px) {
+  .main {
+    width: 95%;
+  }
+
+}
+
+/* styles.css */
+
+.container-article {
+  display: flex;
+  flex-direction: column;  /* Cambia la dirección del diseño a columna */
+  align-items: flex-start;
+}
+
+
+.user-info {
+  margin-right: 10px;  /* Ajusta el margen entre la foto y el contenido */
+}
+
+.user-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.username {
+  margin: 0;
+}
+
+.post {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.photo-container img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 10px;
+  
+}
+
+
+
+.delete-button {
+  background-color: #e74c3c; /* Color rojo */
+  color: white; /* Texto en color blanco */
+  padding: 5px 10px; /* Espaciado interno del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block; /* Asegurar que se muestra en línea */
+}
+
+
+/*profile desde aca*/
+
+
+
+.follow-button {
+  color: white;
+  background-color: #00ff4c;
+  padding: 5px 10px; /* Ajusta el relleno según tus preferencias */
+  border: 2px solid #00ff4c; /* Agrega un borde para resaltar el botón */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Agrega transición al color de fondo y al color del borde */
+}
+
+.follow-button:hover {
+  background-color: #00cc38; /* Cambia el color al pasar el mouse */
+  border-color: #00cc38; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+
+.link-mensajes {
+  color: white;
+  background-color: #00ff4c;
+  padding: 8px 12px; /* Ajusta el relleno según tus preferencias */
+  border: 2px solid #00ff4c; /* Agrega un borde para resaltar el botón */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /
+}
+
+.link-mensajes:hover {
+  background-color: #00cc38; /* Cambia el color al pasar el mouse */
+  border-color: #00cc38; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+
+
+a.customize-profile-link {
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 2px; /* Ajusta el margen derecho según tus preferencias */
+}
+
+a.customize-profile-link:hover {
+  background-color: #0056b3;
+}
+.like-button {
+  margin-right: 10px;
+  background-color: #317a7a;;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.like-container {
+  display: flex; /* Utilizar un modelo de caja flexible */
+  align-items: center; /* Alinear elementos verticalmente en el centro */
+}
+
+.heart-icon::before {
+content: '\2665'; /* Representa un corazón en la mayoría de las fuentes de iconos */
+color: red; /* Color del corazón */
+font-size: 24px; /* Ajusta el tamaño del corazón según tus preferencias */
+margin-left: 5px; /* Agregar un pequeño espacio entre el botón y el contador */
+}
+
+
+.comment-button {
+  margin-right: 10px;
+  background-color: #317a7a;
+  color: white;
+  padding: 8px 12px; /* Ajusta el relleno según tus preferencias */
+  border: 2px solid #317a7a; /* Agrega un borde para resaltar el botón */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Agrega transición al color de fondo y al color del borde */
+
+}
+
+.comment-button:hover {
+  background-color:#317a7a; /* Cambia el color al pasar el mouse */
+  border-color: #317a7a; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+/* Agregar esta clase para estilos similares a los enlaces de mensajes */
+a.nav-button {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #007bff;
+}
+
+a.nav-button:hover {
+  background-color: #0056b3;
+}
+

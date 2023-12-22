@@ -1,0 +1,62 @@
+
+{% extends 'social/layout.html' %}
+{% load humanize %}
+{% block content %}
+{% load static %}
+
+{% for post in posts %}
+<article>
+    <div class="container-article">
+        <div class="user-info">
+            {% if post.user.profile.image %}
+                <img src="{{ post.user.profile.image.url }}" alt="{{ post.user.username }} profile picture">
+            {% else %}
+                <img src="{% static 'default_profile_image.jpg' %}" alt="{{ post.user.username }} profile picture">
+            {% endif %}
+            <h2 class="username"><a href="{% url 'profile' post.user.username %}">@{{ post.user.username }}</a></h2>
+            <i class="clock"></i>
+            <time data-time="#">{{ post.timestamp|naturaltime }}</time>
+        </div>
+        <div>
+            <div class="post">{{ post.content }}</div>
+            
+            {% if post.imagen %}
+                <div class="photo-container">
+                    <img src="{{ post.imagen.url }}" alt="Imagen del post" style="width: 100%; height: auto; max-width: 600px; object-fit: cover; border-radius: 0;">
+                </div>
+            {% endif %}
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="like-container">
+                <a href="{% url 'dar_like' post.id %}" class="like-button">Like</a>
+                <span class="like-count">{{ post.cantidad_likes }}</span>
+            </div>
+            
+            <p><span class="heart-icon"></span>{{ post.cantidad_likes }} likes</p>
+
+           
+            <a href="{% url 'add_comment' post.id %}" class="comment-button btn btn-primary">Comentar</a>
+
+            {% if post.user == request.user %}
+                <a href="{% url 'delete_post' post.id %}" class="btn btn-danger delete-button">Eliminar post</a>
+            {% endif %}
+            
+            
+            <div class="comment-container">
+                {% for comment in post.comment_set.all %}
+                    <div>
+                        <p><strong>{{ comment.user.username }}</strong>: {{ comment.content }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</article>
+{% endfor %}
+
+{% endblock %}

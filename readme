@@ -1,0 +1,26 @@
+Hola soy Nicolas Molina, crador de A.R.i.t(Alternativa rara de instagram o twitter)
+
+----------
+FUNCIONES
+----------
+
+.Registro y Login
+.Follow y Unfollow
+.Mensaje privado entre usuarios
+.Posteo de texto y imagen
+.Dar y quitar Likes
+.Comentar los posteos
+.Personalizacion de perfil
+.Boton de eliminar posteos
+
+------------
+INSTALACION
+------------
+Necesitas abrir una terminal y acceder a la ubicacion del proyecto, si no se modifico y abriste el proyecto en tu editor, abrir una terminal y escribir "cd social_django".
+Luego en la terminal instale lo siguiente
+
+pip install django
+pip install pillow
+
+Luego de eso ya puedo correr el servidor con "python manage.py runserver"
+copie la url en el servidor y ya estaria funcionando
